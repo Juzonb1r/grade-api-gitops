@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: grade-submission-api
-          image: ghcr.io/juzonb1r/k8s-ci-build:<sha>
+          image: juzonb1r/my-website:1.0
           ports:
             - containerPort: 3000
           resources:
@@ -36,5 +36,5 @@ spec:
     app: grade-submission-api
   ports:
     - port: 80
-      targetPort: 3000
+      targetPort: 80
   type: ClusterIP
