@@ -15,11 +15,7 @@ spec:
     spec:
       containers:
         - name: grade-submission-api
-<<<<<<< HEAD
           image: ghcr.io/juzonb1r/k8s-ci-build:<sha>
-=======
-          image: nginx:1.25
->>>>>>> c61edf4 (Update second fix)
           ports:
             - containerPort: 3000
           resources:
@@ -42,4 +38,3 @@ spec:
     - port: 80
       targetPort: 3000
   type: ClusterIP
-
